@@ -7,7 +7,9 @@ public class Main {
         //calcularImc();
         //calculoInss();
         //calculoImpostoRenda();
-        paresImpares();
+        //paresImpares();
+        //calculoFatorial();
+        //tabuada();
     }
 
     public static void calculadoraSimples() {
@@ -115,6 +117,29 @@ public class Main {
                     System.out.println(j);
                 }
             }
+        }
+    }
+
+    public static void calculoFatorial() {
+        System.out.print("Digite um número: ");
+        int num = ler.nextInt();
+        int fatorial = 1;
+
+        while (num != 1) {
+            fatorial *= num;
+            num--;
+        }
+        System.out.print(fatorial);
+    }
+
+    public static void tabuada() {
+        System.out.print("Digite um número: ");
+        int num = ler.nextInt();
+        int res = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            res = num * i;
+            System.out.println(res);
         }
     }
 }
